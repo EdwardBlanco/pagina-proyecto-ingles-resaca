@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Izotal BioLuxury Hotel</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <span class="logo-script">La Resaca Viewpoint</span>
+    <span class="logo-sub">Campestre</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#" class="has-arrow">Sobre nosotros</a></li>
+    <li><a href="#" class="has-arrow">Servicios</a></li>
+    <li><a href="#" class="has-arrow">Galeria</a></li>
+    <li><a href="#">Experiencias</a></li>
+
+  </ul>
+  <button class="btn-reservar">Contactanos</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="hero-content">
+    <h1 class="hero-title">
+      Connect with the Soul
+      <span>of Nature</span>
+    </h1>
+    <div class="hero-buttons">
+      <button class="btn-primary">Ver disponibilidad</button>
+      <button class="btn-outline">Explorar servicios</button>
+    </div>
+    <div class="hero-scroll">
+      <p>Descubre más</p>
+      <div class="scroll-circle"></div>
+    </div>
+  </div>
+
+  
+</section>
+
+<!-- EXPERIENCIAS TRANSFORMACIONALES -->
+<section class="section-experiences">
+  <div class="ornament"><div class="ornament-dot"></div></div>
+  <h2 class="section-title">Experiencias Transformacionales</h2>
+  <p class="section-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta pariatur autem dolore, est tempore quidem reprehenderit iste quos temporibus! In laudantium aliquid nam sunt, maxime neque repudiandae quidem corporis?</p>
+
+  <div class="cards-grid">
+
+    <!-- Refugios -->
+    <div class="card">
+      <div class="card-img card-img-refugios img-placeholder" style="background: linear-gradient(160deg, #1a4a00 0%, #3a7a10 30%, #6aaa30 55%, #8b6520 75%, #5a3a10 100%);">
+        <!-- thatched hut visual -->
+        <svg width="100%" height="100%" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" style="position:absolute">
+          <rect width="400" height="260" fill="none"/>
+          <!-- sky gradient -->
+          <defs>
+            <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#e8a050"/>
+              <stop offset="50%" stop-color="#c06020"/>
+              <stop offset="100%" stop-color="#1a0800"/>
+            </linearGradient>
+            <linearGradient id="vegG" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2a5a10"/>
+              <stop offset="100%" stop-color="#0d2005"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="260" fill="url(#skyG)"/>
+          <!-- vegetation -->
+          <ellipse cx="80" cy="200" rx="90" ry="70" fill="url(#vegG)"/>
+          <ellipse cx="300" cy="210" rx="120" ry="60" fill="url(#vegG)"/>
+          <!-- hut structure -->
+          <rect x="140" y="130" width="120" height="80" fill="#3a2010"/>
+          <polygon points="110,130 200,60 290,130" fill="#5a3a15"/>
+          <!-- roof thatch lines -->
+          <line x1="155" y1="130" x2="200" y2="75" stroke="#7a5020" stroke-width="1.5"/>
+          <line x1="170" y1="130" x2="200" y2="68" stroke="#7a5020" stroke-width="1.5"/>
+          <line x1="230" y1="130" x2="200" y2="75" stroke="#7a5020" stroke-width="1.5"/>
+          <line x1="245" y1="130" x2="200" y2="68" stroke="#7a5020" stroke-width="1.5"/>
+          <!-- door -->
+          <rect x="178" y="160" width="44" height="50" fill="#1a0c05"/>
+          <!-- stilts -->
+          <rect x="155" y="210" width="8" height="50" fill="#2a1a08"/>
+          <rect x="237" y="210" width="8" height="50" fill="#2a1a08"/>
+          <!-- ground floor -->
+          <rect x="0" y="230" width="400" height="30" fill="#1a0d05"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <h3>Experiencias</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dicta illum inventore dolores porro, a veniam ut temporibus hic error neque! Tempora, porro. Animi quibusdam veniam sunt iusto, officia officiis.</p>
+        <a href="#" class="btn-card">Descubre Nuestros Refugios</a>
+      </div>
+    </div>
+
+    <!-- Gastronomía -->
+    <div class="card">
+      <div class="card-img card-img-gastro img-placeholder" style="position:relative; overflow:hidden;">
+        <svg width="100%" height="100%" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="plateG" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#c06020"/>
+              <stop offset="60%" stop-color="#7a3010"/>
+              <stop offset="100%" stop-color="#1a0800"/>
+            </radialGradient>
+          </defs>
+          <rect width="400" height="260" fill="#0d0600"/>
+          <!-- dark wooden surface -->
+          <rect x="0" y="160" width="400" height="100" fill="#1a0d05"/>
+          <!-- plate -->
+          <ellipse cx="200" cy="155" rx="130" ry="130" fill="#2a1a08"/>
+          <ellipse cx="200" cy="150" rx="120" ry="120" fill="#1a0f05"/>
+          <!-- food items -->
+          <ellipse cx="200" cy="148" rx="90" ry="90" fill="url(#plateG)"/>
+          <!-- grilled meat texture -->
+          <rect x="140" y="115" width="120" height="70" rx="8" fill="#8b4020" transform="rotate(-5, 200, 150)"/>
+          <line x1="148" y1="125" x2="248" y2="125" stroke="#c06030" stroke-width="3" transform="rotate(-5, 200, 125)"/>
+          <line x1="148" y1="137" x2="248" y2="137" stroke="#c06030" stroke-width="3" transform="rotate(-5, 200, 137)"/>
+          <line x1="148" y1="149" x2="248" y2="149" stroke="#c06030" stroke-width="2" transform="rotate(-5, 200, 149)"/>
+          <!-- side items - potatoes -->
+          <ellipse cx="145" cy="170" rx="20" ry="15" fill="#d4a040"/>
+          <ellipse cx="170" cy="178" rx="18" ry="14" fill="#c89030"/>
+          <ellipse cx="255" cy="168" rx="20" ry="15" fill="#d4a040"/>
+          <!-- salad/greens on top -->
+          <ellipse cx="200" cy="108" rx="55" ry="22" fill="#3a7a20"/>
+          <ellipse cx="185" cy="105" rx="15" ry="10" fill="#4a9a30"/>
+          <ellipse cx="215" cy="103" rx="18" ry="12" fill="#5aaa35"/>
+          <!-- strawberry accent -->
+          <ellipse cx="230" cy="100" rx="8" ry="10" fill="#cc2020"/>
+          <!-- steam -->
+          <path d="M175,88 Q178,78 175,68" stroke="rgba(255,255,255,0.15)" stroke-width="2" fill="none"/>
+          <path d="M200,85 Q204,74 200,63" stroke="rgba(255,255,255,0.15)" stroke-width="2" fill="none"/>
+          <path d="M225,88 Q228,77 225,66" stroke="rgba(255,255,255,0.15)" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dicta illum inventore dolores porro, a veniam ut temporibus hic error neque! Tempora, porro. Animi quibusdam veniam sunt iusto.</p>
+        <a href="#" class="btn-card">Explora Nuestra Gastronomía</a>
+      </div>
+    </div>
+
+    <!-- Bienestar -->
+    <div class="card">
+      <div class="card-img card-img-bienestar img-placeholder" style="position:relative; overflow:hidden;">
+        <svg width="100%" height="100%" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="wellnessG" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#2a1a08"/>
+              <stop offset="50%" stop-color="#6b4010"/>
+              <stop offset="100%" stop-color="#3a2508"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="260" fill="url(#wellnessG)"/>
+          <!-- bamboo curtains background -->
+          <rect x="0" y="0" width="400" height="260" fill="rgba(100,60,20,0.3)"/>
+          <!-- vertical bamboo strips -->
+          <rect x="0" y="0" width="12" height="260" fill="rgba(160,100,40,0.4)"/>
+          <rect x="16" y="0" width="12" height="260" fill="rgba(140,90,30,0.3)"/>
+          <rect x="32" y="0" width="12" height="260" fill="rgba(160,100,40,0.4)"/>
+          <rect x="48" y="0" width="12" height="260" fill="rgba(140,90,30,0.3)"/>
+          <rect x="340" y="0" width="12" height="260" fill="rgba(160,100,40,0.4)"/>
+          <rect x="356" y="0" width="12" height="260" fill="rgba(140,90,30,0.3)"/>
+          <rect x="372" y="0" width="12" height="260" fill="rgba(160,100,40,0.4)"/>
+          <rect x="388" y="0" width="12" height="260" fill="rgba(140,90,30,0.3)"/>
+          <!-- floor mat -->
+          <rect x="50" y="190" width="300" height="70" rx="4" fill="rgba(200,160,80,0.4)"/>
+          <!-- yoga figure - triangle pose -->
+          <!-- body -->
+          <line x1="200" y1="70" x2="165" y2="190" stroke="#e8c8a0" stroke-width="3"/>
+          <!-- arms stretched -->
+          <line x1="165" y1="130" x2="120" y2="165" stroke="#e8c8a0" stroke-width="3"/>
+          <line x1="165" y1="130" x2="240" y2="80" stroke="#e8c8a0" stroke-width="3"/>
+          <!-- legs wide -->
+          <line x1="165" y1="190" x2="120" y2="220" stroke="#e8c8a0" stroke-width="3"/>
+          <line x1="165" y1="190" x2="230" y2="220" stroke="#e8c8a0" stroke-width="3"/>
+          <!-- head -->
+          <circle cx="200" cy="62" r="14" fill="#e8c8a0"/>
+          <!-- mountain view through opening -->
+          <polygon points="60,130 120,50 180,130" fill="rgba(40,80,40,0.6)"/>
+          <polygon points="200,130 280,40 360,130" fill="rgba(30,60,30,0.6)"/>
+          <!-- warm light from side -->
+          <radialGradient id="warmLight" cx="90%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="rgba(200,120,40,0.5)"/>
+            <stop offset="100%" stop-color="transparent"/>
+          </radialGradient>
+          <rect width="400" height="260" fill="url(#warmLight)"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dicta illum inventore dolores porro, a veniam ut temporibus hic error neque! Tempora, porro. Animi quibusdam veniam sunt iusto, officia officiis.</p>
+        <a href="#" class="btn-card">Explora nuestras experiencias</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PERSONALIZA TU RECONEXIÓN -->
+<section class="section-personaliza">
+  <div class="ornament"><div class="ornament-dot"></div></div>
+  <h2 class="section-title">Lorem ipsum</h2>
+  <p class="section-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, itaque! Ipsum laudantium voluptas magnam delectus earum aliquid doloremque fugiat esse sit exercitationem provident, optio corporis, ea saepe aut dolorum dolores!</p>
+
+  <div class="experiences-grid">
+
+    <div class="exp-card">
+      <div class="exp-bg exp-bg-sendero"></div>
+      <div class="exp-overlay"></div>
+      <div class="exp-content">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <div class="exp-included">INCLUIDO</div>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-bg exp-bg-yoga"></div>
+      <div class="exp-overlay" style="background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, transparent 60%)"></div>
+      <div class="exp-content">
+        <h3 style="color: var(--light-gold);">Lorem ipsum</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <div class="exp-price">$40.000 <span>/persona</span></div>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-bg exp-bg-sound"></div>
+      <div class="exp-overlay"></div>
+      <div class="exp-content">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <div class="exp-price">$100.000 <span>/persona</span></div>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-bg exp-bg-aguas"></div>
+      <div class="exp-overlay"></div>
+      <div class="exp-content">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <div class="exp-price">$60.000 <span>/persona</span></div>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-bg exp-bg-ritual"></div>
+      <div class="exp-overlay"></div>
+      <div class="exp-content">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <div class="exp-price">$150.000 <span>/pareja</span></div>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-bg exp-bg-desayuno"></div>
+      <div class="exp-overlay"></div>
+      <div class="exp-content">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <div class="exp-price">$80.000 <span>/persona</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- RESEÑAS -->
+<section class="section-reviews">
+  <div class="ornament"><div class="ornament-dot"></div></div>
+  <h2 class="section-title">Lo que dicen nuestros visitantes</h2>
+  <p class="section-subtitle">Experiencias reales de quienes han vivido La Resaca Viewpoint</p>
+
+  <div class="reviews-grid">
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="stars">★★★★★</div>
+        <div class="platform-badge badge-tripadvisor">🌿 TripAdvisor</div>
+      </div>
+      <p class="review-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, itaque! Ipsum laudantium voluptas magnam delectus earum aliquid doloremque fugiat esse sit exercitationem provident, optio corporis, ea saepe aut dolorum dolores!..."</p>
+      <a href="#" class="review-link">Ver reseña completa →</a>
+      <div class="review-author">
+        <strong>Paulo G</strong>
+        <span>Pasto, Colombia · Septiembre 2025</span>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="stars">★★★★★</div>
+        <div class="platform-badge badge-airbnb">🏡 Airbnb</div>
+      </div>
+      <p class="review-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, itaque! Ipsum laudantium voluptas magnam delectus earum aliquid doloremque fugiat esse sit exercitationem provident, optio corporis, ea saepe aut dolorum dolores!..."</p>
+      <a href="#" class="review-link">Ver reseña completa →</a>
+      <div class="review-author">
+        <strong>Daznia</strong>
+        <span>Lima, Perú · Enero 2026</span>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="stars">★★★★★</div>
+        <div class="platform-badge badge-google">G Google</div>
+      </div>
+      <p class="review-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, itaque! Ipsum laudantium voluptas magnam delectus earum aliquid doloremque fugiat esse sit exercitationem provident, optio corporis, ea saepe aut dolorum dolores!"</p>
+      <div class="review-author" style="margin-top: 40px;">
+        <strong>Angela Leiton Diaz</strong>
+        <span>Pasto, Colombia · Junio 2025</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="reviews-nav">
+    <button class="nav-btn">‹</button>
+    <button class="nav-btn">›</button>
+  </div>
+
+  
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">La Resaca Viewpoint</div>
+  <div class="footer-sub">Campestre</div>
+  <div class="divider"></div>
+  <ul class="footer-links">
+    <li><a href="#">Sobre nosotros</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Galeria</a></li>
+    <li><a href="#">Experiencias</a></li>
+    <li><a href="#">Contacto</a></li>
+    <li><a href="#">Política de Privacidad</a></li>
+  </ul>
+  <p>© 2026 Todos los derechos reservados.</p>
+</footer>
+
+<script>
+  // Scroll effect for nav
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 80) {
+      nav.style.background = 'rgba(255,255,255,0.98)';
+      nav.style.boxShadow = '0 2px 20px rgba(60,20,0,0.1)';
+    } else {
+      nav.style.background = 'rgba(255,255,255,0.92)';
+      nav.style.boxShadow = 'none';
+    }
+  });
+
+  // Smooth scroll for scroll button
+  document.querySelector('.scroll-circle').addEventListener('click', () => {
+    document.querySelector('.section-experiences').scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
