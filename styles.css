@@ -1,4 +1,3 @@
-
 /* :root {
     --cream: #f5f0e8;
     --dark-brown: #3a1f0d;
@@ -44,17 +43,28 @@
     overflow-x: hidden;
   }
 
+  h2{
+    color: var(--dark-brown)
+  }
+
   /* ── NAV ── */
   nav {
     position: sticky; top: 0; left: 0; right: 0; z-index: 1000;
     display: flex; align-items: center; justify-content: space-between;
-    padding: 14px 48px;
+    padding: 5px 48px;
     background: rgba(255,255,255,0.92);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(200,146,42,0.15);
     transition: background 0.3s;
   }
-
+  .logo-img img {
+    width: 80px;
+    height: auto;
+    display: flex;
+  }
+  .nav-left {
+    display: flex; align-items: center; gap: 10px; flex-direction: row;
+  }
   .nav-logo {
     display: flex; flex-direction: column; align-items: flex-start;
   }
@@ -164,11 +174,6 @@
 
   /* Hut shapes */
 
-
-  .hero {
-    /* margin-top: 69px; */
-  }
-
   .hero-content{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                     url('./img/background.jpg');
@@ -177,6 +182,8 @@
     background-position: center;
     height: 100vh;
   }
+  
+  
 
   .hut {
     position: absolute;
@@ -282,7 +289,7 @@
     margin-bottom: 10px;
   }
   .scroll-circle {
-    width: 40px; height: 40px;
+    width: 60px; height: 60px;
     border: 2px solid rgba(255,255,255,0.5);
     border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
@@ -290,7 +297,12 @@
     cursor: pointer;
     animation: bounce 2s infinite;
   }
-  .scroll-circle::after { content: '↓'; color: white; font-size: 16px; }
+
+.hero-scroll p{
+    font-size: 15px;    
+}
+
+  .scroll-circle::after { content: '↓'; color: white; font-size: 36px; }
 
   @keyframes bounce {
     0%, 100% { transform: translateY(0); }
@@ -326,8 +338,8 @@
   .cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    max-width: 1200px;
+    gap: 5%;
+    max-width: 90%;
     margin: 0 auto;
   }
 
@@ -423,6 +435,11 @@
     background: var(--section-bg);
     
   }
+  .section-personaliza1 {
+    padding: 50px 60px;
+    background: var(--cream);
+    
+  }
 
   .experiences-grid {
     display: grid;
@@ -495,7 +512,7 @@
 
   /* ── RESEÑAS ── */
   .section-reviews {
-    padding: 100px 60px;
+    padding: 80px 60px;
     background: var(--cream);
   }
 
@@ -589,6 +606,7 @@
     color: rgba(255,255,255,0.7);
     padding: 20px 60px;
     text-align: center;
+    display: flex; flex-direction: column; align-items: center;
   }
   footer .footer-logo {
     font-family: 'Playfair Display', serif;
@@ -650,7 +668,7 @@
   @media (max-width: 900px) {
     nav { padding: 14px 24px; }
     .nav-links { display: none; }
-    .section-experiences, .section-personaliza, .section-reviews { padding: 60px 24px; }
+    .section-experiences, .section-personaliza, .section-personaliza1, .section-reviews { padding: 60px 24px; }
     .cards-grid, .experiences-grid, .reviews-grid { grid-template-columns: 1fr; }
     footer { padding: 40px 24px; }
   }
