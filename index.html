@@ -25,13 +25,13 @@
   </div>
   
   <ul class="nav-links">
-    <li><a href="#" class="has-arrow">Sobre nosotros</a></li>
-    <li><a href="#" class="has-arrow">Servicios</a></li>
-    <li><a href="#" class="has-arrow">Galeria</a></li>
-    <li><a href="#">Experiencias</a></li>
+    <li><a href="#sobre-nosotros" class="has-arrow">Sobre nosotros</a></li>
+    <li><a href="#servicios" class="has-arrow">Servicios</a></li>
+    <li><a href="galeria.html" class="has-arrow">Galeria</a></li>
+    <li><a href="#experiencias">Experiencias</a></li>
 
   </ul>
-  <button class="btn-reservar">Contactanos</button>
+  <button class="btn-reservar" onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">Contactanos</button>
 </nav>
 
 <!-- HERO -->
@@ -56,7 +56,7 @@
 </section>
 
 <!-- EXPERIENCIAS TRANSFORMACIONALES -->
-<section class="section-experiences">
+<section class="section-experiences" id="sobre-nosotros">
   <div class="ornament"><div class="ornament-dot"></div></div>
   <h2 class="section-title">Experiencias Transformacionales</h2>
   <p class="section-subtitle">Es un destino de Turismo Sensorial y Regenerativo ubicado en el municipio de Mogotes, Santander. Se define como un espacio de "Magia Natural Pura" diseñado para la desconexión digital y la reconexión con la tierra. Su propuesta principal combina la imponencia geográfica del Cañón del Río Mogoticos con la riqueza cultural de la tradición campesina santandereana.</p>
@@ -228,7 +228,7 @@ El mirador funciona como un centro de bienestar al aire libre:</p>
 </section>
 
 <!-- PERSONALIZA TU RECONEXIÓN -->
-<section class="section-personaliza1">
+<section class="section-personaliza1" id="servicios">
   <div class="ornament"><div class="ornament-dot"></div></div>
   <h2 class="section-title">Productos y Alianzas Culturales</h2>
   <p class="section-subtitle">Más allá de la vista, ofrecemos un encuentro con la raíz santandereana:</p>
@@ -269,7 +269,7 @@ El mirador funciona como un centro de bienestar al aire libre:</p>
 </section>
 
 <!-- PERSONALIZA TU RECONEXIÓN -->
-<section class="section-personaliza">
+<section class="section-personaliza" id="experiencias">
   <div class="ornament"><div class="ornament-dot"></div></div>
   <h2 class="section-title">Gastronomía con Identidad</h2>
   <p class="section-subtitle">Nuestros productos alimenticios son el sello final de la experiencia. Ofrecemos degustaciones de:</p>
@@ -365,17 +365,72 @@ El mirador funciona como un centro de bienestar al aire libre:</p>
   
 </section>
 
+<!-- UBICACIÓN -->
+<section class="section-location" id="ubicacion">
+  <div class="location-container">
+    <div class="location-info">
+      <h2 class="location-title">Nuestra Ubicación</h2>
+      
+      <div class="location-details">
+        <div class="location-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+        </div>
+        <div class="location-text">
+          <p class="address-line1">Vereda Quebradas</p>
+          <p class="address-line2">Mogotes, Santander</p>
+          <p class="address-line3">Santander, Colombia</p>
+        </div>
+      </div>
+      
+      <div class="social-section">
+        <h3>Síguenos</h3>
+        <p>Mantente conectado con nuestras últimas novedades</p>
+        <div class="social-buttons">
+          <a href="#" class="social-btn instagram" aria-label="Síguenos en Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="social-btn facebook" aria-label="Síguenos en Facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="location-map">
+      <!-- Satélite Google Maps embed using the requested coordinates -->
+      <iframe 
+        src="https://maps.google.com/maps?q=6.525438,-73.021123&t=k&z=16&output=embed" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
-<footer>
+<footer id="contacto">
   <div class="footer-logo">La Resaca Viewpoint</div>
   <div class="footer-sub">Campestre</div>
   <div class="divider"></div>
   <ul class="footer-links">
-    <li><a href="#">Sobre nosotros</a></li>
-    <li><a href="#">Servicios</a></li>
-    <li><a href="#">Galeria</a></li>
-    <li><a href="#">Experiencias</a></li>
-    <li><a href="#">Contacto</a></li>
+    <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="galeria.html">Galeria</a></li>
+    <li><a href="#experiencias">Experiencias</a></li>
+    <li><a href="#contacto">Contacto</a></li>
     <li><a href="#">Política de Privacidad</a></li>
   </ul>
   <p>© 2026 Todos los derechos reservados.</p>
