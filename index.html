@@ -72,7 +72,45 @@
 
       <!-- Refugios -->
       <div class="card">
-        <img class="card-img" src="./img/Experiencia sensorial.jpg" alt="Marketing Sensorial (Los 5 Sentidos)">
+        <div class="card-img card-img-refugios img-placeholder"
+          style="background: linear-gradient(160deg, #1a4a00 0%, #3a7a10 30%, #6aaa30 55%, #8b6520 75%, #5a3a10 100%);">
+          <!-- thatched hut visual -->
+          <svg width="100%" height="100%" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg"
+            style="position:absolute">
+            <rect width="400" height="260" fill="none" />
+            <!-- sky gradient -->
+            <defs>
+              <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#e8a050" />
+                <stop offset="50%" stop-color="#c06020" />
+                <stop offset="100%" stop-color="#1a0800" />
+              </linearGradient>
+              <linearGradient id="vegG" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#2a5a10" />
+                <stop offset="100%" stop-color="#0d2005" />
+              </linearGradient>
+            </defs>
+            <rect width="400" height="260" fill="url(#skyG)" />
+            <!-- vegetation -->
+            <ellipse cx="80" cy="200" rx="90" ry="70" fill="url(#vegG)" />
+            <ellipse cx="300" cy="210" rx="120" ry="60" fill="url(#vegG)" />
+            <!-- hut structure -->
+            <rect x="140" y="130" width="120" height="80" fill="#3a2010" />
+            <polygon points="110,130 200,60 290,130" fill="#5a3a15" />
+            <!-- roof thatch lines -->
+            <line x1="155" y1="130" x2="200" y2="75" stroke="#7a5020" stroke-width="1.5" />
+            <line x1="170" y1="130" x2="200" y2="68" stroke="#7a5020" stroke-width="1.5" />
+            <line x1="230" y1="130" x2="200" y2="75" stroke="#7a5020" stroke-width="1.5" />
+            <line x1="245" y1="130" x2="200" y2="68" stroke="#7a5020" stroke-width="1.5" />
+            <!-- door -->
+            <rect x="178" y="160" width="44" height="50" fill="#1a0c05" />
+            <!-- stilts -->
+            <rect x="155" y="210" width="8" height="50" fill="#2a1a08" />
+            <rect x="237" y="210" width="8" height="50" fill="#2a1a08" />
+            <!-- ground floor -->
+            <rect x="0" y="230" width="400" height="30" fill="#1a0d05" />
+          </svg>
+        </div>
         <div class="card-body">
           <h3>Marketing Sensorial (Los 5 Sentidos)</h3>
           <p>El mirador no solo se "ve", se experimenta:</p>
@@ -90,7 +128,47 @@
 
       <!-- Gastronomía -->
       <div class="card">
-        <img class="card-img" src="./img/Sky yoga.jpg" alt="Pilares de Bienestar (Salud Espiritual)">
+        <div class="card-img card-img-gastro img-placeholder" style="position:relative; overflow:hidden;">
+          <svg width="100%" height="100%" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="plateG" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#c06020" />
+                <stop offset="60%" stop-color="#7a3010" />
+                <stop offset="100%" stop-color="#1a0800" />
+              </radialGradient>
+            </defs>
+            <rect width="400" height="260" fill="#0d0600" />
+            <!-- dark wooden surface -->
+            <rect x="0" y="160" width="400" height="100" fill="#1a0d05" />
+            <!-- plate -->
+            <ellipse cx="200" cy="155" rx="130" ry="130" fill="#2a1a08" />
+            <ellipse cx="200" cy="150" rx="120" ry="120" fill="#1a0f05" />
+            <!-- food items -->
+            <ellipse cx="200" cy="148" rx="90" ry="90" fill="url(#plateG)" />
+            <!-- grilled meat texture -->
+            <rect x="140" y="115" width="120" height="70" rx="8" fill="#8b4020" transform="rotate(-5, 200, 150)" />
+            <line x1="148" y1="125" x2="248" y2="125" stroke="#c06030" stroke-width="3"
+              transform="rotate(-5, 200, 125)" />
+            <line x1="148" y1="137" x2="248" y2="137" stroke="#c06030" stroke-width="3"
+              transform="rotate(-5, 200, 137)" />
+            <line x1="148" y1="149" x2="248" y2="149" stroke="#c06030" stroke-width="2"
+              transform="rotate(-5, 200, 149)" />
+            <!-- side items - potatoes -->
+            <ellipse cx="145" cy="170" rx="20" ry="15" fill="#d4a040" />
+            <ellipse cx="170" cy="178" rx="18" ry="14" fill="#c89030" />
+            <ellipse cx="255" cy="168" rx="20" ry="15" fill="#d4a040" />
+            <!-- salad/greens on top -->
+            <ellipse cx="200" cy="108" rx="55" ry="22" fill="#3a7a20" />
+            <ellipse cx="185" cy="105" rx="15" ry="10" fill="#4a9a30" />
+            <ellipse cx="215" cy="103" rx="18" ry="12" fill="#5aaa35" />
+            <!-- strawberry accent -->
+            <ellipse cx="230" cy="100" rx="8" ry="10" fill="#cc2020" />
+            <!-- steam -->
+            <path d="M175,88 Q178,78 175,68" stroke="rgba(255,255,255,0.15)" stroke-width="2" fill="none" />
+            <path d="M200,85 Q204,74 200,63" stroke="rgba(255,255,255,0.15)" stroke-width="2" fill="none" />
+            <path d="M225,88 Q228,77 225,66" stroke="rgba(255,255,255,0.15)" stroke-width="2" fill="none" />
+          </svg>
+        </div>
         <div class="card-body">
           <h3>Pilares de Bienestar (Salud Espiritual)
           </h3>
@@ -107,7 +185,51 @@
 
       <!-- Bienestar -->
       <div class="card">
-        <img class="card-img" src="./img/Alianza familiar campesina.jpg" alt="Rescate Cultural y Tradición">
+        <div class="card-img card-img-bienestar img-placeholder" style="position:relative; overflow:hidden;">
+          <svg width="100%" height="100%" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="wellnessG" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#2a1a08" />
+                <stop offset="50%" stop-color="#6b4010" />
+                <stop offset="100%" stop-color="#3a2508" />
+              </linearGradient>
+            </defs>
+            <rect width="400" height="260" fill="url(#wellnessG)" />
+            <!-- bamboo curtains background -->
+            <rect x="0" y="0" width="400" height="260" fill="rgba(100,60,20,0.3)" />
+            <!-- vertical bamboo strips -->
+            <rect x="0" y="0" width="12" height="260" fill="rgba(160,100,40,0.4)" />
+            <rect x="16" y="0" width="12" height="260" fill="rgba(140,90,30,0.3)" />
+            <rect x="32" y="0" width="12" height="260" fill="rgba(160,100,40,0.4)" />
+            <rect x="48" y="0" width="12" height="260" fill="rgba(140,90,30,0.3)" />
+            <rect x="340" y="0" width="12" height="260" fill="rgba(160,100,40,0.4)" />
+            <rect x="356" y="0" width="12" height="260" fill="rgba(140,90,30,0.3)" />
+            <rect x="372" y="0" width="12" height="260" fill="rgba(160,100,40,0.4)" />
+            <rect x="388" y="0" width="12" height="260" fill="rgba(140,90,30,0.3)" />
+            <!-- floor mat -->
+            <rect x="50" y="190" width="300" height="70" rx="4" fill="rgba(200,160,80,0.4)" />
+            <!-- yoga figure - triangle pose -->
+            <!-- body -->
+            <line x1="200" y1="70" x2="165" y2="190" stroke="#e8c8a0" stroke-width="3" />
+            <!-- arms stretched -->
+            <line x1="165" y1="130" x2="120" y2="165" stroke="#e8c8a0" stroke-width="3" />
+            <line x1="165" y1="130" x2="240" y2="80" stroke="#e8c8a0" stroke-width="3" />
+            <!-- legs wide -->
+            <line x1="165" y1="190" x2="120" y2="220" stroke="#e8c8a0" stroke-width="3" />
+            <line x1="165" y1="190" x2="230" y2="220" stroke="#e8c8a0" stroke-width="3" />
+            <!-- head -->
+            <circle cx="200" cy="62" r="14" fill="#e8c8a0" />
+            <!-- mountain view through opening -->
+            <polygon points="60,130 120,50 180,130" fill="rgba(40,80,40,0.6)" />
+            <polygon points="200,130 280,40 360,130" fill="rgba(30,60,30,0.6)" />
+            <!-- warm light from side -->
+            <radialGradient id="warmLight" cx="90%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(200,120,40,0.5)" />
+              <stop offset="100%" stop-color="transparent" />
+            </radialGradient>
+            <rect width="400" height="260" fill="url(#warmLight)" />
+          </svg>
+        </div>
         <div class="card-body">
           <h3>Rescate Cultural y Tradición</h3>
           <p>Es un custodio de la identidad de Mogotes:</p>
@@ -135,7 +257,7 @@
     <div class="experiences-grid">
 
       <div class="exp-card">
-        <div class="exp-bg exp-bg-taller"></div>
+        <div class="exp-bg exp-bg-sendero"></div>
         <div class="exp-overlay"></div>
         <div class="exp-content">
           <h3>Taller Creativo Infantil</h3>
@@ -146,7 +268,7 @@
       </div>
 
       <div class="exp-card">
-        <div class="exp-bg exp-bg-charlas"></div>
+        <div class="exp-bg exp-bg-yoga"></div>
         <div class="exp-overlay" style="background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, transparent 60%)"></div>
         <div class="exp-content">
           <h3 style="color: var(--light-gold);">Charlas con el Abuelo</h3>
@@ -156,7 +278,7 @@
       </div>
 
       <div class="exp-card">
-        <div class="exp-bg exp-bg-alianza"></div>
+        <div class="exp-bg exp-bg-sound"></div>
         <div class="exp-overlay"></div>
         <div class="exp-content">
           <h3>Alianza Familiar Campesina</h3>
@@ -181,7 +303,7 @@
     <div class="experiences-grid">
 
       <div class="exp-card">
-        <div class="exp-bg exp-bg-bebidas"></div>
+        <div class="exp-bg exp-bg-sendero"></div>
         <div class="exp-overlay"></div>
         <div class="exp-content">
           <h3>Bebidas Ancestrales</h3>
@@ -191,7 +313,7 @@
       </div>
 
       <div class="exp-card">
-        <div class="exp-bg exp-bg-amasijos"></div>
+        <div class="exp-bg exp-bg-yoga"></div>
         <div class="exp-overlay" style="background: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, transparent 60%)"></div>
         <div class="exp-content">
           <h3 style="color: var(--light-gold);">Amasijos y Frutos</h3>
@@ -201,7 +323,7 @@
       </div>
 
       <div class="exp-card">
-        <div class="exp-bg exp-bg-plato"></div>
+        <div class="exp-bg exp-bg-sound"></div>
         <div class="exp-overlay"></div>
         <div class="exp-content">
           <h3>Plato Fuerte</h3>
@@ -330,69 +452,19 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <span class="footer-logo">La Resaca Viewpoint</span>
-        <span class="footer-tagline">Campestre</span>
-        <p>Un destino de Turismo Sensorial y Regenerativo en el corazón de Santander. Magia Natural Pura para reconectarte con la tierra.</p>
-        <div class="footer-social">
-          <a href="#" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-          </a>
-          <a href="#" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-          </a>
-          <a href="https://wa.me/573168462657" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Navegación</h4>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-          <li><a href="experiencias.html">Experiencias</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Experiencias</h4>
-        <ul>
-          <li><a href="#">Bebidas Ancestrales</a></li>
-          <li><a href="#">Sky Yoga</a></li>
-          <li><a href="#">Taller Infantil</a></li>
-          <li><a href="#">Charlas con el Abuelo</a></li>
-          <li><a href="#">Gallina Criolla</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contacto</h4>
-        <div class="footer-contact-info">
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-            <span>Vereda Quebradas, Mogotes, Santander</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.58 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            <a href="tel:+573168462657">+57 316 846 2657</a>
-          </div>
-          <div class="footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            <a href="mailto:info@laresacaviewpoint.com">info@laresacaviewpoint.com</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 La Resaca Viewpoint Campestre. Todos los derechos reservados.</p>
-      <ul class="footer-bottom-links">
-        <li><a href="#">Política de Privacidad</a></li>
-        <li><a href="#">Términos de Uso</a></li>
-      </ul>
-    </div>
+  <footer id="contacto">
+    <div class="footer-logo">La Resaca Viewpoint</div>
+    <div class="footer-sub">Campestre</div>
+    <div class="divider"></div>
+    <ul class="footer-links">
+      <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="#experiencias">Experiencias</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#">Política de Privacidad</a></li>
+    </ul>
+    <p>© 2026 Todos los derechos reservados.</p>
   </footer>
 
   <script>
