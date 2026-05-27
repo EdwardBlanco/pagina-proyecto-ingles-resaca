@@ -1,35 +1,60 @@
-/* :root {
-    --cream: #f5f0e8;
-    --dark-brown: #3a1f0d;
-    --warm-brown: #7b3f1a;
-    --gold: #c8922a;
-    --light-gold: #e8b84b;
-    --text: #2c1a0e;
-    --text-light: #6b4c35;
-    --white: #ffffff;
-    --card-bg: #ffffff;
-    --section-bg: #f2ece0;
-  } */
-
-
-.cfafasf {
-  color: #BFA182;
-  color: #5C753C;
-  color: #62B1DF;
-
-}
-
 :root {
+  /* ── PALETA DE COLORES PRINCIPAL (VERDES Y NATURALEZA) ── */
   --cream: #d4ccc4;
-  --dark-brown: #24370e;
-  --warm-brown: #0c5c37;
-  --gold: #5b7b30;
-  --light-gold: #7eb03c;
-  --text: #2c1a0e;
-  --text-light: #6b4c35;
+  --dark-brown: #24370e; /* Verde oscuro forestal */
+  --dark-brown-rgb: 36, 55, 14;
+  --warm-brown: #0c5c37; /* Verde esmeralda rico */
+  --gold: #5b7b30;       /* Verde oliva */
+  --light-gold: #7eb03c; /* Verde claro lima */
   --white: #ffffff;
+  --white-rgb: 255, 255, 255;
+
+  /* Colores del diseño original (marrones/dorados) conservados por referencia:
+     --cream-orig: #f5f0e8;
+     --dark-brown-orig: #3a1f0d;
+     --warm-brown-orig: #7b3f1a;
+     --gold-orig: #c8922a;
+     --light-gold-orig: #e8b84b;
+  */
+
+  /* ── TIPOGRAFÍA Y TEXTO ── */
+  --text: #2c1a0e;       /* Marrón muy oscuro */
+  --text-light: #6b4c35; /* Marrón medio */
+  --review-text: #5a3a25; /* Marrón para reseñas */
+
+  /* ── COLORES DE ENFOQUE Y ACENTO DE FORMULARIOS ── */
+  --primary-green: #5c753c; /* Verde medio para h1 y botones de formulario */
+  --error-color: #d32f2f;   /* Rojo para mensajes de error */
+  --focus-glow: rgba(212, 107, 130, 0.2); /* Sombra rosa suave de enfoque */
+  --focus-glow-strong: rgba(212, 107, 130, 0.5);
+
+  /* ── COLORES DE COMPONENTES Y FONDOS ── */
   --card-bg: #ffffff;
-  --section-bg: #f2ece0;
+  --section-bg: #f2ece0;   /* Crema claro */
+  --form-bg: #62B1DF;      /* Azul claro para el fondo del grid de contacto */
+  --mobile-menu-bg: #faf7f2; /* Crema suave para el menú móvil desplegado */
+  --nav-bg-opacity: rgba(255, 255, 255, 0.92);
+
+  /* ── DETALLES Y DECORACIONES ── */
+  --brand-gold: #c8922a;   /* Oro clásico del diseño original (usado en bordes) */
+  --brand-gold-rgb: 200, 146, 42;
+  --warm-gold: #c8a070;    /* Oro cálido / bronce (usado en botones y detalles) */
+  --star-color: #f5a623;   /* Color de estrellas de reseñas */
+  --border-light: #ddd;
+  --border-medium: #ccc;
+
+  /* ── ICONOS Y PLATAFORMAS SOCIALES ── */
+  --tripadvisor-color: #00aa6c;
+  --airbnb-color: #ff5a5f;
+  --google-color: #4285f4;
+  --booking-color: #003580;
+  --whatsapp-color: #25d366;
+
+  /* ── GRÁFICOS (CABAÑAS / HUTS) ── */
+  --hut-roof: #2a1505;
+  --hut-body: #1a0d03;
+
+  /* ── DIMENSIONES ── */
   --nav-height: 90px;
 }
 
@@ -66,9 +91,9 @@ nav {
   justify-content: space-between;
   height: var(--nav-height);
   padding: 0 48px;
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--nav-bg-opacity);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(200, 146, 42, 0.15);
+  border-bottom: 1px solid rgba(var(--brand-gold-rgb), 0.15);
   transition: background 0.3s;
 }
 
@@ -268,7 +293,7 @@ nav {
   display: block;
   width: 60px;
   height: 30px;
-  background: #2a1505;
+  background: var(--hut-roof);
   clip-path: polygon(0 100%, 50% 0%, 100% 100%);
   margin-bottom: -2px;
 }
@@ -278,7 +303,7 @@ nav {
   display: block;
   width: 40px;
   height: 20px;
-  background: #1a0d03;
+  background: var(--hut-body);
   margin: 0 auto;
 }
 
@@ -475,7 +500,7 @@ nav {
   height: 260px;
   object-fit: cover;
   display: block;
-  background: #c8a070;
+  background: var(--warm-gold);
 }
 
 /* Placeholder gradient images */
@@ -745,7 +770,7 @@ nav {
 }
 
 .stars {
-  color: #f5a623;
+  color: var(--star-color);
   font-size: 16px;
   letter-spacing: 2px;
 }
@@ -762,23 +787,23 @@ nav {
 }
 
 .badge-tripadvisor {
-  background: #00aa6c;
+  background: var(--tripadvisor-color);
   color: white;
 }
 
 .badge-airbnb {
-  background: #ff5a5f;
+  background: var(--airbnb-color);
   color: white;
 }
 
 .badge-google {
-  background: #4285f4;
+  background: var(--google-color);
   color: white;
 }
 
 .review-text {
   font-size: 13.5px;
-  color: #5a3a25;
+  color: var(--review-text);
   line-height: 1.75;
   margin-bottom: 20px;
   font-weight: 300;
@@ -820,7 +845,7 @@ nav {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid #c8a070;
+  border: 1px solid var(--warm-gold);
   background: white;
   cursor: pointer;
   font-size: 14px;
@@ -850,23 +875,23 @@ nav {
 }
 
 .verified-bar a.google-link {
-  color: #4285f4;
+  color: var(--google-color);
 }
 
 .verified-bar a.ta-link {
-  color: #00aa6c;
+  color: var(--tripadvisor-color);
 }
 
 .verified-bar a.airbnb-link {
-  color: #ff5a5f;
+  color: var(--airbnb-color);
 }
 
 .verified-bar a.booking-link {
-  color: #003580;
+  color: var(--booking-color);
 }
 
 .verified-bar .dot {
-  color: #c8a070;
+  color: var(--warm-gold);
 }
 
 
@@ -884,7 +909,7 @@ nav {
 }
 
 h1 {
-  color: #5c753c;
+  color: var(--primary-green);
   text-align: center;
   margin-bottom: 30px;
 }
@@ -892,7 +917,7 @@ h1 {
 /* ===Implemntar mensajes de error en el formulario */
 
 .error-message {
-  color: #d32f2f;
+  color: var(--error-color);
   /* Rojo oscuro para mejor contraste */
   font-size: 0.85rem;
   margin-top: 5px;
@@ -903,7 +928,7 @@ h1 {
 /* Estilo para campos inválidos */
 input:invalid,
 textarea:invalid {
-  border: 1px solid #5C753C;
+  border: 1px solid var(--primary-green);
   background-color: var(--cream);
   /* Fondo rojo claro */
 }
@@ -913,7 +938,7 @@ textarea:invalid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  background: #62B1DF;
+  background: var(--form-bg);
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -942,7 +967,7 @@ textarea,
 select {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-light);
   border-radius: 4px;
   font-size: 16px;
   transition: border 0.3s ease;
@@ -950,9 +975,9 @@ select {
 
 input:focus,
 textarea:focus {
-  border-color: #5C753C;
+  border-color: var(--primary-green);
   outline: none;
-  box-shadow: 0 0 0 2px rgba(212, 107, 130, 0.2);
+  box-shadow: 0 0 0 2px var(--focus-glow);
 }
 
 textarea {
@@ -1000,7 +1025,7 @@ textarea {
 
 /* Botón mejorado */
 button[type="submit"] {
-  background-color: #5c753c;
+  background-color: var(--primary-green);
   color: white;
   border: none;
   padding: 12px 24px;
@@ -1020,7 +1045,7 @@ button[type="submit"]:hover {
 
 button[type="submit"]:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(212, 107, 130, 0.5);
+  box-shadow: 0 0 0 3px var(--focus-glow-strong);
 }
 
 error-message {
@@ -1048,7 +1073,7 @@ error-message {
 
 .telefono-link i {
   font-size: 20px;
-  color: #25d366;
+  color: var(--whatsapp-color);
 }
 
 .whatsapp-link {
@@ -1069,7 +1094,7 @@ error-message {
 
 .whatsapp-link i {
   font-size: 20px;
-  color: #25d366;
+  color: var(--whatsapp-color);
 }
 
 .formulario {
@@ -1082,7 +1107,7 @@ textarea {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-medium);
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -1341,7 +1366,7 @@ textarea {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #faf7f2; /* Fondo crema muy suave y elegante */
+    background: var(--mobile-menu-bg); /* Fondo crema muy suave y elegante */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1395,7 +1420,7 @@ textarea {
 
   nav.menu-open .nav-links li {
     width: 100%;
-    border-bottom: 1px solid rgba(36, 55, 14, 0.08);
+    border-bottom: 1px solid rgba(var(--dark-brown-rgb), 0.08);
     opacity: 0;
     transform: translateY(15px);
     animation: slideInLink 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -1432,7 +1457,7 @@ textarea {
     content: '▾';
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    color: rgba(36, 55, 14, 0.4);
+    color: rgba(var(--dark-brown-rgb), 0.4);
     transition: transform 0.3s ease;
   }
 
@@ -1535,7 +1560,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
-  border-bottom: 1px solid rgba(36, 55, 14, 0.1);
+  border-bottom: 1px solid rgba(var(--dark-brown-rgb), 0.1);
   padding-bottom: 20px;
 }
 
@@ -1554,19 +1579,19 @@ textarea {
   padding: 12px 24px;
   background: var(--white);
   color: var(--dark-brown);
-  border: 1px solid rgba(36, 55, 14, 0.15);
+  border: 1px solid rgba(var(--dark-brown-rgb), 0.15);
   border-radius: 8px;
   text-decoration: none;
   font-size: 13px;
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
-  box-shadow: 0 4px 15px rgba(36, 55, 14, 0.05);
+  box-shadow: 0 4px 15px rgba(var(--dark-brown-rgb), 0.05);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .btn-back:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(36, 55, 14, 0.12);
+  box-shadow: 0 8px 24px rgba(var(--dark-brown-rgb), 0.12);
   border-color: var(--dark-brown);
   color: var(--dark-brown);
 }
@@ -1581,7 +1606,7 @@ textarea {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(36, 55, 14, 0.08);
+  box-shadow: 0 4px 20px rgba(var(--dark-brown-rgb), 0.08);
   cursor: pointer;
   aspect-ratio: 3 / 2;
   transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -1597,7 +1622,7 @@ textarea {
 
 .gallery-item:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(36, 55, 14, 0.15);
+  box-shadow: 0 12px 30px rgba(var(--dark-brown-rgb), 0.15);
 }
 
 .gallery-item:hover img {
@@ -1810,7 +1835,7 @@ textarea {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(36, 55, 14, 0.2);
+  box-shadow: 0 4px 12px rgba(var(--dark-brown-rgb), 0.2);
 }
 
 .location-text p {
