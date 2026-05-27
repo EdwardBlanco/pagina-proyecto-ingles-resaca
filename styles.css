@@ -1469,6 +1469,39 @@ textarea {
   }
 }
 
+/* ── MEJORAS DE RESPONSIVIDAD (GRILLAS EN TABLETAS) ── */
+@media (min-width: 718px) and (max-width: 1115px) {
+  /* Hacer que el último elemento ocupe dos columnas en grillas de 3 elementos */
+  .cards-grid > .card:last-child,
+  .experiences-grid > .exp-card:last-child,
+  .reviews-grid > .review-card:last-child {
+    grid-column: span 2;
+  }
+
+  /* Para el último card de la sección de experiencias (bloque con imagen superior) */
+  .cards-grid > .card:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  /* Ajustar imagen para que sea horizontal al 50% de ancho */
+  .cards-grid > .card:last-child .card-img {
+    width: 50%;
+    height: auto;
+    min-height: 280px;
+  }
+
+  /* Ajustar cuerpo del card al 50% de ancho */
+  .cards-grid > .card:last-child .card-body {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 36px;
+  }
+}
+
 /* Animaciones */
 @keyframes menuFadeIn {
   from {
@@ -1862,5 +1895,24 @@ textarea {
 
   .social-buttons {
     justify-content: center;
+  }
+}
+
+/* ── MEJORAS DE RESPONSIVIDAD (MÓVIL < 500PX) ── */
+@media (max-width: 500px) {
+  /* Apilar botones del hero verticalmente para evitar desbordamiento */
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 320px;
+    margin: 40px auto 0;
+    gap: 12px;
+  }
+
+  .hero-buttons button,
+  .hero-buttons a {
+    width: 100%;
+    text-align: center;
   }
 }
