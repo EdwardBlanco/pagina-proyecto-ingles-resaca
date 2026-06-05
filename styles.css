@@ -147,6 +147,9 @@ nav {
   font-weight: 500;
   color: var(--text);
   transition: color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -154,8 +157,10 @@ nav {
 }
 
 .nav-links .has-arrow::after {
-  content: ' ▾';
+  content: '▾';
   font-size: 10px;
+  margin-left: 5px;
+  display: inline-block;
 }
 
 .btn-reservar {
@@ -399,9 +404,11 @@ nav {
 }
 
 .hero-scroll {
-  margin-top: auto;
-  padding-top: 40px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
   width: 100%;
+  text-align: center;
   animation: fadeUp 1s 0.6s ease forwards;
 }
 
