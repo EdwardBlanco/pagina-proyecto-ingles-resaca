@@ -491,7 +491,7 @@ nav {
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   max-width: 1400px;
   margin: 0 auto;
@@ -608,7 +608,7 @@ nav {
 
 .experiences-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   max-width: 1400px;
   margin: 0 auto;
@@ -764,7 +764,7 @@ nav {
 
 .reviews-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   max-width: 1400px;
   margin: 0 auto 40px;
@@ -1528,8 +1528,14 @@ textarea {
   }
 }
 
-/* ── MEJORAS DE RESPONSIVIDAD (GRILLAS EN TABLETAS) ── */
-@media (min-width: 718px) and (max-width: 1115px) {
+/* ── MEJORAS DE RESPONSIVIDAD (GRILLAS EN TABLETAS Y MÓVILES) ── */
+@media (max-width: 1120px) {
+  .cards-grid,
+  .experiences-grid,
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   /* Hacer que el último elemento ocupe dos columnas en grillas de 3 elementos */
   .cards-grid > .card:last-child,
   .experiences-grid > .exp-card:last-child,
@@ -1558,6 +1564,34 @@ textarea {
     flex-direction: column;
     justify-content: center;
     padding: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-grid,
+  .experiences-grid,
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid > .card:last-child,
+  .experiences-grid > .exp-card:last-child,
+  .reviews-grid > .review-card:last-child {
+    grid-column: span 1;
+  }
+
+  .cards-grid > .card:last-child {
+    flex-direction: column;
+  }
+
+  .cards-grid > .card:last-child .card-img {
+    width: 100%;
+    min-height: 260px;
+  }
+
+  .cards-grid > .card:last-child .card-body {
+    width: 100%;
+    padding: 28px;
   }
 }
 
