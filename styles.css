@@ -97,6 +97,12 @@ nav {
   transition: background 0.3s;
 }
 
+@media (min-width: 1496px) {
+  nav {
+    padding: 0 calc((100% - 1400px) / 2);
+  }
+}
+
 .logo-img img {
   width: 80px;
   height: auto;
